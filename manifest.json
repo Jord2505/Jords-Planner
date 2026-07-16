@@ -1,9 +1,9 @@
 {
   "name": "Jord's Planner",
-  "short_name": "Jord's Planner",
-  "start_url": "./index.html",
+  "short_name": "Jord's",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#ff0000",
-  "description": "Personal training and meal planner"
+  "description": "Training and meal planner"
 }
