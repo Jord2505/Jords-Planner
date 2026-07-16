@@ -150,3 +150,55 @@ if (weightInput) {
     );
 
 }
+// Daily progress tracker
+
+function updateProgress(){
+
+    const boxes = document.querySelectorAll(
+        '#home input[type="checkbox"]'
+    );
+
+
+    let completed = 0;
+
+
+    boxes.forEach(box => {
+
+        if(box.checked){
+            completed++;
+        }
+
+    });
+
+
+    let percentage =
+        Math.round(
+            (completed / boxes.length) * 100
+        );
+
+
+    document.getElementById(
+        "progressScore"
+    ).innerHTML =
+        percentage + "% Complete";
+
+}
+
+
+// Update when checkbox changes
+
+document
+.querySelectorAll(
+    '#home input[type="checkbox"]'
+)
+.forEach(box => {
+
+    box.addEventListener(
+        "change",
+        updateProgress
+    );
+
+});
+
+
+updateProgress();
