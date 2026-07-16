@@ -202,3 +202,104 @@ document
 
 
 updateProgress();
+// Progress saving
+
+function saveProgress(){
+
+    const start =
+    document.getElementById("startWeight").value;
+
+    const current =
+    document.getElementById("currentWeight").value;
+
+    const goal =
+    document.getElementById("goalWeight").value;
+
+    const notes =
+    document.getElementById("progressNotes").value;
+
+
+    localStorage.setItem(
+        "startWeight",
+        start
+    );
+
+    localStorage.setItem(
+        "currentWeight",
+        current
+    );
+
+    localStorage.setItem(
+        "goalWeight",
+        goal
+    );
+
+    localStorage.setItem(
+        "progressNotes",
+        notes
+    );
+
+
+    showStats();
+
+}
+
+
+function showStats(){
+
+    const current =
+    localStorage.getItem("currentWeight");
+
+
+    const goal =
+    localStorage.getItem("goalWeight");
+
+
+    if(current && goal){
+
+        document.getElementById(
+            "weightSummary"
+        ).innerHTML =
+        `
+        Current: ${current}kg<br>
+        Goal: ${goal}kg
+        `;
+
+    }
+
+}
+
+
+// Load saved progress
+
+window.addEventListener(
+"load",
+()=>{
+
+document.getElementById(
+"startWeight"
+).value =
+localStorage.getItem("startWeight") || "";
+
+
+document.getElementById(
+"currentWeight"
+).value =
+localStorage.getItem("currentWeight") || "";
+
+
+document.getElementById(
+"goalWeight"
+).value =
+localStorage.getItem("goalWeight") || "";
+
+
+document.getElementById(
+"progressNotes"
+).value =
+localStorage.getItem("progressNotes") || "";
+
+
+showStats();
+
+});
