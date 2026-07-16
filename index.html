@@ -25,7 +25,7 @@
 
 <h1>Jord's Planner</h1>
 
-<p>Fat Loss | Training | Nutrition</p>
+<p>Fat Loss Planner</p>
 
 </header>
 
@@ -34,24 +34,14 @@
 <main>
 
 
+<!-- HOME -->
+
 <section id="home" class="page">
 
-<div class="card">
-
-<h2>🔥 Today's Focus</h2>
-
-<p>
-Stay consistent.<br>
-Train hard.<br>
-Hit your meals.
-</p>
-
-</div>
-
 
 <div class="card">
 
-<h2>Daily Targets</h2>
+<h2>🔥 Daily Targets</h2>
 
 <p>
 1900 kcal<br>
@@ -63,9 +53,10 @@ Hit your meals.
 </div>
 
 
+
 <div class="card">
 
-<h2>💧 Reminders</h2>
+<h2>💧 Notes</h2>
 
 <p>
 Drink 2-3L Water<br>
@@ -82,48 +73,56 @@ No late night snacking
 
 
 
+<!-- TRAINING -->
+
 <section id="training" class="page hidden">
 
 
 <div class="card">
 
-<h2>🏋️ Training Plan</h2>
+
+<h2>🏋️ Training</h2>
 
 
-<button onclick="showWorkout('monday')">
-Monday<br>
-Upper Body
-</button>
+<select id="daySelect">
+
+<option value="">
+Select Day
+</option>
 
 
-<button onclick="showWorkout('tuesday')">
-Tuesday<br>
-Lower Body
-</button>
+<option value="monday">
+Monday - Upper Body
+</option>
 
 
-<button onclick="showWorkout('wednesday')">
-Wednesday<br>
-Rest / Cardio
-</button>
+<option value="tuesday">
+Tuesday - Lower Body
+</option>
 
 
-<button onclick="showWorkout('thursday')">
-Thursday<br>
-Full Body
-</button>
+<option value="wednesday">
+Wednesday - Rest/Cardio
+</option>
 
 
-<button onclick="showWorkout('friday')">
-Friday<br>
-Cardio + Abs
-</button>
+<option value="thursday">
+Thursday - Full Body
+</option>
+
+
+<option value="friday">
+Friday - Cardio + Abs
+</option>
+
+
+</select>
 
 
 </div>
 
 
-<div id="workoutDisplay"></div>
+<div id="workoutArea"></div>
 
 
 </section>
@@ -132,12 +131,15 @@ Cardio + Abs
 
 
 
+<!-- MEALS -->
+
 <section id="meals" class="page hidden">
 
 
 <div class="card">
 
-<h2>🍽 Meal Plan</h2>
+
+<h2>🍽 Meals</h2>
 
 
 <h3>Breakfast</h3>
@@ -150,6 +152,7 @@ Cardio + Abs
 </p>
 
 
+
 <h3>Lunch</h3>
 
 <p>
@@ -160,12 +163,14 @@ Cardio + Abs
 </p>
 
 
+
 <h3>Snack</h3>
 
 <p>
 200g Greek Yoghurt<br>
 1 Banana
 </p>
+
 
 
 <h3>Dinner</h3>
@@ -176,6 +181,7 @@ Cardio + Abs
 100g Veg<br>
 5g Olive Oil
 </p>
+
 
 
 <h3>Friday Breakfast</h3>
@@ -194,7 +200,9 @@ Egg + Bacon Roll
 
 
 
-<section id="shop" class="page hidden">
+<!-- SHOPPING -->
+
+<section id="shopping" class="page hidden">
 
 
 <div class="card">
@@ -203,109 +211,46 @@ Egg + Bacon Roll
 <h2>🛒 Monday-Friday Shop</h2>
 
 
-<h3>🥩 Protein</h3>
+<h3>Protein</h3>
 
-
-<label>
-☐ Chicken Breast<br>
-900g
-</label>
-
-
-<label>
-☐ 5% Mince<br>
-1kg
-</label>
-
-
-<label>
-☐ Greek Yoghurt<br>
-1kg
-</label>
-
-
-<label>
-☐ Whey Protein<br>
-120g
-</label>
-
-
-<label>
+<p>
+☐ Chicken Breast - 900g<br>
+☐ 5% Mince - 1kg<br>
+☐ Greek Yoghurt - 1kg<br>
+☐ Whey Protein - 120g<br>
 ☐ Eggs<br>
-Friday Breakfast
-</label>
-
-
-<label>
-☐ Bacon<br>
-Friday Breakfast
-</label>
+☐ Bacon
+</p>
 
 
 
-<h3>🍚 Carbs</h3>
+<h3>Carbs</h3>
 
-
-<label>
-☐ Oats<br>
-240g
-</label>
-
-
-<label>
-☐ Rice<br>
-350g dry
-</label>
-
-
-<label>
-☐ Potatoes<br>
-1.25kg
-</label>
-
-
-<label>
-☐ Bananas<br>
-5
-</label>
-
-
-<label>
-☐ Berries<br>
-200g
-</label>
-
-
-<label>
-☐ Milk<br>
-800ml
-</label>
+<p>
+☐ Oats - 240g<br>
+☐ Rice - 350g<br>
+☐ Potatoes - 1.25kg<br>
+☐ Bananas - 5<br>
+☐ Berries - 200g<br>
+☐ Milk - 800ml
+</p>
 
 
 
-<h3>🥦 Vegetables</h3>
+<h3>Vegetables</h3>
 
-
-<label>
-☐ Lunch Vegetables<br>
-500g
-</label>
-
-
-<label>
-☐ Dinner Vegetables<br>
-500g
-</label>
+<p>
+☐ Lunch Veg - 500g<br>
+☐ Dinner Veg - 500g
+</p>
 
 
 
-<h3>🧴 Extras</h3>
+<h3>Extras</h3>
 
-
-<label>
-☐ Olive Oil<br>
-50g
-</label>
+<p>
+☐ Olive Oil - 50g
+</p>
 
 
 </div>
@@ -324,32 +269,31 @@ Friday Breakfast
 <nav>
 
 
-<button onclick="showPage('home')">
+<button onclick="openPage('home')">
 🏠<br>
 Home
 </button>
 
 
-<button onclick="showPage('training')">
+<button onclick="openPage('training')">
 🏋️<br>
 Training
 </button>
 
 
-<button onclick="showPage('meals')">
+<button onclick="openPage('meals')">
 🍽<br>
 Meals
 </button>
 
 
-<button onclick="showPage('shop')">
+<button onclick="openPage('shopping')">
 🛒<br>
 Shop
 </button>
 
 
 </nav>
-
 
 
 
