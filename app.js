@@ -94,3 +94,59 @@ function showPage(pageId) {
         .classList.remove("hidden");
 
 }
+// Save checkbox progress
+
+const checkboxes = document.querySelectorAll(
+    'input[type="checkbox"]'
+);
+
+
+checkboxes.forEach((box, index) => {
+
+    const saved = localStorage.getItem(
+        "checkbox_" + index
+    );
+
+    if (saved === "true") {
+        box.checked = true;
+    }
+
+
+    box.addEventListener("change", () => {
+
+        localStorage.setItem(
+            "checkbox_" + index,
+            box.checked
+        );
+
+    });
+
+});
+
+
+// Save weight
+
+const weightInput = document.querySelector(
+    'input[type="number"]'
+);
+
+
+if (weightInput) {
+
+    weightInput.value =
+        localStorage.getItem("weight") || "";
+
+
+    weightInput.addEventListener(
+        "input",
+        () => {
+
+            localStorage.setItem(
+                "weight",
+                weightInput.value
+            );
+
+        }
+    );
+
+}
