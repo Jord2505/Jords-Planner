@@ -79,3 +79,18 @@ if (workouts[dayName]) {
     document.getElementById("todayWorkout").innerHTML =
         "No workout planned";
 }
+// Page navigation
+
+function showPage(pageId) {
+
+    const pages = document.querySelectorAll(".page");
+
+    pages.forEach(page => {
+        page.classList.add("hidden");
+    });
+
+
+    document.getElementById(pageId)
+        .classList.remove("hidden");
+
+}
