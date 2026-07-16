@@ -541,119 +541,16 @@ Hanging Leg Raises 3x10
 }
 function showWorkout(day) {
 
-    const display = document.getElementById("workoutDisplay");
-
-    if (!display) {
-        alert("Workout area missing");
-        return;
-    }
-
-
-    if (day === "monday") {
-
-        display.innerHTML = `
-
-        <div class="card">
-
-        <h2>Monday - Upper Body</h2>
-
-        <h3>Bench Press - 4x8</h3>
-
-        <table class="logTable">
-
-        <tr>
-        <th>Set</th>
-        <th>Weight</th>
-        <th>Reps</th>
-        </tr>
-
-        <tr>
-        <td>1</td>
-        <td><input type="number"></td>
-        <td><input type="number"></td>
-        </tr>
-
-        <tr>
-        <td>2</td>
-        <td><input type="number"></td>
-        <td><input type="number"></td>
-        </tr>
-
-        <tr>
-        <td>3</td>
-        <td><input type="number"></td>
-        <td><input type="number"></td>
-        </tr>
-
-        <tr>
-        <td>4</td>
-        <td><input type="number"></td>
-        <td><input type="number"></td>
-        </tr>
-
-        </table>
-
-        </div>
-
-        `;
-
-    }
-
-}
-function showWorkout(day) {
-
 const display = document.getElementById("workoutDisplay");
 
-
-if(day === "monday") {
-
 display.innerHTML = `
-
 <div class="card">
 
-<h2>Monday - Upper Body</h2>
+<h2>${day}</h2>
 
-
-<h3>Bench Press - 4x8</h3>
-
-<table class="logTable">
-
-<tr>
-<th>Set</th>
-<th>Weight</th>
-<th>Reps</th>
-</tr>
-
-<tr>
-<td>1</td>
-<td><input type="number"></td>
-<td><input type="number"></td>
-</tr>
-
-<tr>
-<td>2</td>
-<td><input type="number"></td>
-<td><input type="number"></td>
-</tr>
-
-<tr>
-<td>3</td>
-<td><input type="number"></td>
-<td><input type="number"></td>
-</tr>
-
-<tr>
-<td>4</td>
-<td><input type="number"></td>
-<td><input type="number"></td>
-</tr>
-
-</table>
+<p>Workout loaded</p>
 
 </div>
-
 `;
-
-}
 
 }
