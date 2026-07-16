@@ -1,238 +1,259 @@
 * {
-    box-sizing: border-box;
+
+box-sizing:border-box;
+
 }
+
 
 body {
-    margin: 0;
-    padding: 0;
-    background: #0a0a0a;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+margin:0;
+
+font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+background:#000;
+
+color:#fff;
+
+padding-bottom:90px;
+
 }
 
-.app {
-    max-width: 430px;
-    margin: auto;
-    min-height: 100vh;
-    padding: 20px;
-    padding-bottom: 90px;
-}
+
 
 header {
-    text-align: center;
-    margin-bottom: 25px;
+
+text-align:center;
+
+padding:25px 15px;
+
+background:#111;
+
+border-bottom:2px solid #ff0000;
+
 }
+
 
 header h1 {
-    font-size: 32px;
-    margin: 0;
-    color: #ff1a1a;
+
+margin:0;
+
+font-size:32px;
+
+color:#ff0000;
+
 }
 
+
 header p {
-    color: #aaa;
+
+margin-top:8px;
+
+color:#ccc;
+
 }
+
+
+
+
+.page {
+
+padding:15px;
+
+}
+
+
+
+.hidden {
+
+display:none;
+
+}
+
+
 
 
 .card {
-    background: #151515;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 18px;
-}
 
+background:#151515;
 
-.card h2 {
-    margin-top: 0;
-    color: #ff1a1a;
-    font-size: 20px;
-}
+border-radius:18px;
 
+padding:20px;
 
-.card p {
-    line-height: 1.6;
-    color: #eee;
-}
+margin-bottom:18px;
 
-
-label {
-    display: block;
-    padding: 12px 0;
-    font-size: 16px;
-}
-
-
-input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
-    accent-color: #ff1a1a;
-    margin-right: 10px;
-}
-
-
-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    max-width: 430px;
-    margin: auto;
-
-    background: #111;
-    border-top: 1px solid #333;
-
-    display: flex;
-    justify-content: space-around;
-
-    padding: 12px 5px;
-}
-
-
-nav button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 11px;
-}
-
-
-nav button:active {
-    color: #ff1a1a;
-}
-/* Page switching */
-
-.hidden {
-    display: none;
-}
-
-
-/* Inputs */
-
-input[type="number"],
-textarea {
-
-    width: 100%;
-    background: #222;
-    color: white;
-
-    border: 1px solid #444;
-    border-radius: 12px;
-
-    padding: 12px;
-    font-size: 16px;
+border:1px solid #333;
 
 }
 
 
-textarea {
-    min-height: 100px;
-    resize: none;
+
+h2 {
+
+color:#ff0000;
+
+margin-top:0;
+
+}
+
+
+h3 {
+
+margin-top:25px;
+
+color:white;
+
 }
 
 
-/* Navigation buttons */
 
-nav button {
-    flex: 1;
-    padding: 8px 2px;
-}
-
-
-nav button:hover {
-    color: #ff1a1a;
-}
-#progressScore {
-
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-    color: #ff1a1a;
-
-}
 button {
 
-    background:#ff1a1a;
-    color:white;
+width:100%;
 
-    border:none;
-    border-radius:12px;
+padding:15px;
 
-    padding:14px;
-    width:100%;
+margin:8px 0;
 
-    font-size:16px;
-    font-weight:bold;
+border:none;
 
-    margin-top:10px;
+border-radius:14px;
+
+background:#ff0000;
+
+color:white;
+
+font-size:16px;
+
+font-weight:bold;
 
 }
+
 
 
 button:active {
 
-    transform:scale(0.97);
-
-}
-h3 {
-
-color:#fff;
-margin-top:20px;
+transform:scale(.97);
 
 }
 
 
-.exerciseWeight {
 
-margin-bottom:12px;
+label {
+
+display:block;
+
+background:#222;
+
+padding:15px;
+
+margin:10px 0;
+
+border-radius:12px;
 
 }
-#workoutStats {
 
-font-size:20px;
-font-weight:bold;
-color:#ff1a1a;
 
-}
-.logTable {
+
+
+
+table {
 
 width:100%;
+
 border-collapse:collapse;
+
 margin-bottom:20px;
 
 }
 
 
-.logTable th {
 
-color:#ff1a1a;
-padding:8px;
+th {
+
+color:#ff0000;
+
+padding:10px;
 
 }
 
 
-.logTable td {
 
-padding:5px;
+td {
+
+padding:8px;
+
 text-align:center;
 
 }
 
 
-.logTable input {
+
+input {
 
 width:70px;
+
+padding:10px;
+
 background:#222;
+
 color:white;
 
-border:1px solid #444;
+border:1px solid #555;
+
 border-radius:8px;
 
-padding:8px;
+text-align:center;
 
 }
-.training button {
 
-margin-bottom:12px;
+
+
+
+
+nav {
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+right:0;
+
+height:75px;
+
+background:#111;
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+border-top:2px solid #ff0000;
+
+}
+
+
+
+nav button {
+
+background:none;
+
+margin:0;
+
+padding:5px;
+
+font-size:14px;
+
+}
+
+
+
+nav button:hover {
+
+background:none;
 
 }
