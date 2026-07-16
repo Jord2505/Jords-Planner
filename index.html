@@ -1,102 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <title>Jord's Planner</title>
+<title>Jord's Planner</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
 
-    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
 
 <div class="app">
 
-    <header>
-        <h1>Jord's Planner</h1>
-        <p id="date"></p>
-    </header>
+<header>
+<h1>Jord's Planner</h1>
+<p id="date"></p>
+</header>
 
 
-    <main>
+<section id="home" class="page">
 
-        <section class="card">
-            <h2>Today's Focus</h2>
-            <p id="todayWorkout">
-                Loading workout...
-            </p>
-        </section>
+<div class="card">
+<h2>Today's Focus</h2>
+<p id="todayWorkout">Loading...</p>
+</div>
 
 
-        <section class="card">
-            <h2>Daily Checklist</h2>
+<div class="card">
+<h2>Daily Checklist</h2>
 
-            <label>
-                <input type="checkbox">
-                Workout Complete
-            </label>
+<label>
+<input type="checkbox">
+Workout Complete
+</label>
 
-            <label>
-                <input type="checkbox">
-                Meals Followed
-            </label>
+<label>
+<input type="checkbox">
+Meals Followed
+</label>
 
-            <label>
-                <input type="checkbox">
-                Water Goal (2-3L)
-            </label>
+<label>
+<input type="checkbox">
+Water Goal (2-3L)
+</label>
 
-            <label>
-                <input type="checkbox">
-                Walk / Golf
-            </label>
+<label>
+<input type="checkbox">
+Walk / Golf
+</label>
 
-        </section>
+</div>
 
-
-        <section class="card">
-            <h2>Today's Meals</h2>
-
-            <p>
-                🥣 Breakfast<br>
-                60g Oats<br>
-                200ml Milk<br>
-                30g Whey<br>
-                50g Berries
-            </p>
-
-            <p>
-                🍗 Lunch<br>
-                180g Chicken Breast<br>
-                70g Dry Rice<br>
-                100g Veg
-            </p>
-
-            <p>
-                🥩 Dinner<br>
-                200g 5% Mince<br>
-                250g Potatoes<br>
-                100g Veg
-            </p>
-
-        </section>
+</section>
 
 
-    </main>
+
+<section id="training" class="page hidden">
+
+<div class="card">
+
+<h2>Training Plan</h2>
+
+<p>
+<strong>Monday - Upper Body</strong><br>
+Bench Press 4x8<br>
+Rows 4x10<br>
+Shoulder Press 3x10<br>
+Bicep Curls 3x10<br>
+Tricep Dips 3x10
+</p>
 
 
-    <nav>
+<p>
+<strong>Tuesday - Lower Body</strong><br>
+Squats 4x8<br>
+Lunges 3x10<br>
+Leg Curls 3x12<br>
+Calf Raises 3x10
+</p>
 
-        <button>🏠 Home</button>
-        <button>🏋️ Training</button>
-        <button>🍽 Meals</button>
-        <button>🛒 Shop</button>
-        <button>📈 Progress</button>
 
-    </nav>
+<p>
+<strong>Thursday - Full Body</strong><br>
+Deadlifts 4x6<br>
+Lat Pulldowns 3x12<br>
+Dumbbell Press 3x10<br>
+Core Work
+</p>
+
+
+<p>
+<strong>Friday - Cardio + Abs</strong><br>
+Incline Walk 20-30 mins<br>
+Plank 3x60 secs<br>
+Hanging Leg Raises 3x10
+</p>
+
+</div>
+
+</section>
+
+
+
+
+<section id="meals" class="page hidden">
+
+<div class="card">
+
+<h2>Daily Targets</h2>
+
+<p>
+🔥 1900 kcal<br>
+💪 150g Protein<br>
+🍚 180g Carbs<br>
+🥑 60g Fat
+</p>
+
+
+<h2>Meals</h2>
+
+<p>
+🥣 Breakfast<br>
+60g Oats<br>
+200ml Milk<br>
+30g Whey<br>
+50g Berries
+</p>
+
+
+<p>
+🍗 Lunch<br>
+180g Chicken Breast<br>
+70g Dry Rice<br>
+100g Veg<br>
+5g Olive Oil
+</p>
+
+
+<p>
+🍌 Snack<br>
+200g Greek Yoghurt<br>
+1 Banana
+</p>
+
+
+<p>
+🥩 Dinner<br>
+200g 5% Mince<br>
+250g Potatoes<br>
+100g Veg<br>
+5g Olive Oil
+</p>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="shop" class="page hidden">
+
+<div class="card">
+
+<h2>Shopping List</h2>
+
+<label><input type="checkbox"> Chicken Breast</label>
+<label><input type="checkbox"> 5% Mince</label>
+<label><input type="checkbox"> Whey Protein</label>
+<label><input type="checkbox"> Greek Yoghurt</label>
+<label><input type="checkbox"> Eggs</label>
+<label><input type="checkbox"> Oats</label>
+<label><input type="checkbox"> Rice</label>
+<label><input type="checkbox"> Potatoes</label>
+<label><input type="checkbox"> Milk</label>
+<label><input type="checkbox"> Fruit & Veg</label>
+<label><input type="checkbox"> Olive Oil</label>
+
+</div>
+
+</section>
+
+
+
+
+
+<section id="progress" class="page hidden">
+
+<div class="card">
+
+<h2>Progress</h2>
+
+<p>
+Weight:
+<input type="number" placeholder="kg">
+</p>
+
+<p>
+Notes:
+</p>
+
+<textarea placeholder="Weekly notes"></textarea>
+
+</div>
+
+</section>
+
+
+
+<nav>
+
+<button onclick="showPage('home')">🏠<br>Home</button>
+
+<button onclick="showPage('training')">🏋️<br>Training</button>
+
+<button onclick="showPage('meals')">🍽️<br>Meals</button>
+
+<button onclick="showPage('shop')">🛒<br>Shop</button>
+
+<button onclick="showPage('progress')">📈<br>Progress</button>
+
+</nav>
 
 
 </div>
