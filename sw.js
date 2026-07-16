@@ -1,4 +1,4 @@
-const cacheName = "jords-planner-v1";
+const cacheName = "jords-planner-v2";
 
 const files = [
 "index.html",
