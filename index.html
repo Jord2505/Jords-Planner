@@ -1,90 +1,98 @@
-<div class="card">
-
-<h2>Daily Progress</h2>
-
-<p id="progressScore">
-0% Complete
-</p>
-
-</div>
-<div class="card">
-
-<h2>🔥 Training Stats</h2>
-
-<p id="workoutStats">
-No workouts completed yet
-</p>
-
-</div>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Jord's Planner</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#ff1a1a">
+
+<meta name="theme-color" content="#ff0000">
 
 </head>
 
+
 <body>
 
-<div class="app">
 
 <header>
+
 <h1>Jord's Planner</h1>
-<p id="date"></p>
+
+<p>Fat Loss | Training | Nutrition</p>
+
 </header>
+
+
+
+<main>
 
 
 <section id="home" class="page">
 
 <div class="card">
-<h2>Today's Focus</h2>
-<p id="todayWorkout">Loading...</p>
+
+<h2>🔥 Today's Focus</h2>
+
+<p>
+Stay consistent.<br>
+Train hard.<br>
+Hit your meals.
+</p>
+
 </div>
 
 
 <div class="card">
-<h2>Daily Checklist</h2>
 
-<label>
-<input type="checkbox">
-Workout Complete
-</label>
+<h2>Daily Targets</h2>
 
-<label>
-<input type="checkbox">
-Meals Followed
-</label>
-
-<label>
-<input type="checkbox">
-Water Goal (2-3L)
-</label>
-
-<label>
-<input type="checkbox">
-Walk / Golf
-</label>
+<p>
+1900 kcal<br>
+150g Protein<br>
+180g Carbs<br>
+60g Fat
+</p>
 
 </div>
+
+
+<div class="card">
+
+<h2>💧 Reminders</h2>
+
+<p>
+Drink 2-3L Water<br>
+Walk/Golf when possible<br>
+No late night snacking
+</p>
+
+</div>
+
 
 </section>
 
 
 
+
+
 <section id="training" class="page hidden">
+
 
 <div class="card">
 
 <h2>🏋️ Training Plan</h2>
 
+
 <button onclick="showWorkout('monday')">
-Monday
+Monday<br>
+Upper Body
 </button>
 
 
@@ -115,38 +123,36 @@ Cardio + Abs
 </div>
 
 
-
 <div id="workoutDisplay"></div>
 
 
 </section>
+
+
+
+
+
 <section id="meals" class="page hidden">
+
 
 <div class="card">
 
-<h2>Daily Targets</h2>
+<h2>🍽 Meal Plan</h2>
 
 
-🔥 1900 kcal<br>
-💪 150g Protein<br>
-🍚 180g Carbs<br>
-🥑 60g Fat
-</p>
-
-
-<h2>Meals</h2>
+<h3>Breakfast</h3>
 
 <p>
-🥣 Breakfast<br>
 60g Oats<br>
 200ml Milk<br>
-30g Whey<br>
+30g Whey Protein<br>
 50g Berries
 </p>
 
 
+<h3>Lunch</h3>
+
 <p>
-🍗 Lunch<br>
 180g Chicken Breast<br>
 70g Dry Rice<br>
 100g Veg<br>
@@ -154,22 +160,33 @@ Cardio + Abs
 </p>
 
 
+<h3>Snack</h3>
+
 <p>
-🍌 Snack<br>
 200g Greek Yoghurt<br>
 1 Banana
 </p>
 
 
+<h3>Dinner</h3>
+
 <p>
-🥩 Dinner<br>
 200g 5% Mince<br>
 250g Potatoes<br>
 100g Veg<br>
 5g Olive Oil
 </p>
 
+
+<h3>Friday Breakfast</h3>
+
+<p>
+Egg + Bacon Roll
+</p>
+
+
 </div>
+
 
 </section>
 
@@ -179,86 +196,88 @@ Cardio + Abs
 
 <section id="shop" class="page hidden">
 
+
 <div class="card">
+
 
 <h2>🛒 Monday-Friday Shop</h2>
 
 
 <h3>🥩 Protein</h3>
 
+
 <label>
-<input type="checkbox">
-Chicken Breast<br>
+☐ Chicken Breast<br>
 900g
 </label>
 
+
 <label>
-<input type="checkbox">
-5% Mince<br>
+☐ 5% Mince<br>
 1kg
 </label>
 
+
 <label>
-<input type="checkbox">
-Greek Yoghurt<br>
+☐ Greek Yoghurt<br>
 1kg
 </label>
 
+
 <label>
-<input type="checkbox">
-Whey Protein<br>
+☐ Whey Protein<br>
 120g
 </label>
 
-<label>
-<input type="checkbox">
-Eggs<br>
-Friday Breakfast
-</label>
 
 <label>
-<input type="checkbox">
-Bacon<br>
+☐ Eggs<br>
 Friday Breakfast
 </label>
 
 
+<label>
+☐ Bacon<br>
+Friday Breakfast
+</label>
 
-<h3>🍚 Carbohydrates</h3>
+
+
+<h3>🍚 Carbs</h3>
+
 
 <label>
-<input type="checkbox">
-Oats<br>
+☐ Oats<br>
 240g
 </label>
 
+
 <label>
-<input type="checkbox">
-Rice<br>
+☐ Rice<br>
 350g dry
 </label>
 
+
 <label>
-<input type="checkbox">
-Potatoes<br>
+☐ Potatoes<br>
 1.25kg
 </label>
 
+
 <label>
-<input type="checkbox">
-Bananas<br>
+☐ Bananas<br>
 5
 </label>
 
+
 <label>
-<input type="checkbox">
-Berries<br>
+☐ Berries<br>
 200g
 </label>
 
+
 <label>
-<input type="checkbox">
-Milk<br>
+☐ Milk<br>
 800ml
 </label>
 
@@ -266,15 +285,15 @@ Milk<br>
 
 <h3>🥦 Vegetables</h3>
 
+
 <label>
-<input type="checkbox">
-Lunch Vegetables<br>
+☐ Lunch Vegetables<br>
 500g
 </label>
 
+
 <label>
-<input type="checkbox">
-Dinner Vegetables<br>
+☐ Dinner Vegetables<br>
 500g
 </label>
 
@@ -282,40 +301,61 @@ Dinner Vegetables<br>
 
 <h3>🧴 Extras</h3>
 
-<label>
-<input type="checkbox">
-Olive Oil<br>
-50g
-</label>
 
 <label>
-<input type="checkbox">
-Water<br>
-10-15 litres
+☐ Olive Oil<br>
+50g
 </label>
 
 
 </div>
 
+
 </section>
+
+
+
+</main>
+
+
+
+
 
 <nav>
 
-<button onclick="showPage('home')">🏠<br>Home</button>
 
-<button onclick="showPage('training')">🏋️<br>Training</button>
+<button onclick="showPage('home')">
+🏠<br>
+Home
+</button>
 
-<button onclick="showPage('meals')">🍽️<br>Meals</button>
 
-<button onclick="showPage('shop')">🛒<br>Shop</button>
+<button onclick="showPage('training')">
+🏋️<br>
+Training
+</button>
+
+
+<button onclick="showPage('meals')">
+🍽<br>
+Meals
+</button>
+
+
+<button onclick="showPage('shop')">
+🛒<br>
+Shop
+</button>
+
 
 </nav>
 
 
-</div>
 
 
 <script src="app.js"></script>
 
+
 </body>
+
 </html>
