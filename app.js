@@ -600,3 +600,4 @@ function showWorkout(day) {
     }
 
 }
+alert("Jords Planner JS loaded");
