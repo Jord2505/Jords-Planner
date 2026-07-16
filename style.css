@@ -144,3 +144,11 @@ nav button {
 nav button:hover {
     color: #ff1a1a;
 }
+#progressScore {
+
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff1a1a;
+
+}
