@@ -601,3 +601,8 @@ function showWorkout(day) {
 
 }
 alert("Jords Planner JS loaded");
+function showWorkout(day) {
+
+alert("You opened " + day);
+
+}
