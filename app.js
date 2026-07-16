@@ -600,9 +600,60 @@ function showWorkout(day) {
     }
 
 }
-alert("Jords Planner JS loaded");
 function showWorkout(day) {
 
-alert("You opened " + day);
+const display = document.getElementById("workoutDisplay");
+
+
+if(day === "monday") {
+
+display.innerHTML = `
+
+<div class="card">
+
+<h2>Monday - Upper Body</h2>
+
+
+<h3>Bench Press - 4x8</h3>
+
+<table class="logTable">
+
+<tr>
+<th>Set</th>
+<th>Weight</th>
+<th>Reps</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+</tr>
+
+</table>
+
+</div>
+
+`;
+
+}
 
 }
