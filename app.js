@@ -303,3 +303,51 @@ localStorage.getItem("progressNotes") || "";
 showStats();
 
 });
+// Workout logging
+
+function saveWorkout(){
+
+const weights =
+document.querySelectorAll(
+".exerciseWeight"
+);
+
+
+weights.forEach(
+(input,index)=>{
+
+localStorage.setItem(
+"exercise_" + index,
+input.value
+);
+
+});
+
+alert("Workout saved 💪");
+
+}
+
+
+// Load workout weights
+
+window.addEventListener(
+"load",
+()=>{
+
+const weights =
+document.querySelectorAll(
+".exerciseWeight"
+);
+
+
+weights.forEach(
+(input,index)=>{
+
+input.value =
+localStorage.getItem(
+"exercise_" + index
+) || "";
+
+});
+
+});
