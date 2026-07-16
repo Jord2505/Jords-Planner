@@ -399,3 +399,144 @@ window.addEventListener(
 ()=>{
 updateWorkoutStats();
 });
+function showWorkout(day){
+
+const display =
+document.getElementById("workoutDisplay");
+
+
+if(day === "monday"){
+
+display.innerHTML = `
+
+<div class="card">
+
+<h2>Monday - Upper Body</h2>
+
+
+<h3>Bench Press - 4x8</h3>
+
+<table class="logTable">
+<tr>
+<th>Set</th>
+<th>Weight</th>
+<th>Reps</th>
+</tr>
+
+<tr><td>1</td><td><input></td><td><input></td></tr>
+<tr><td>2</td><td><input></td><td><input></td></tr>
+<tr><td>3</td><td><input></td><td><input></td></tr>
+<tr><td>4</td><td><input></td><td><input></td></tr>
+
+</table>
+
+
+<h3>Rows - 4x10</h3>
+
+<table class="logTable">
+<tr>
+<th>Set</th>
+<th>Weight</th>
+<th>Reps</th>
+</tr>
+
+<tr><td>1</td><td><input></td><td><input></td></tr>
+<tr><td>2</td><td><input></td><td><input></td></tr>
+<tr><td>3</td><td><input></td><td><input></td></tr>
+<tr><td>4</td><td><input></td><td><input></td></tr>
+
+</table>
+
+
+</div>
+
+`;
+
+}
+
+
+
+if(day === "tuesday"){
+
+display.innerHTML = `
+
+<div class="card">
+
+<h2>Tuesday - Lower Body</h2>
+
+<p>
+Squats - 4x8<br><br>
+Lunges - 3x10<br><br>
+Leg Curls - 3x12<br><br>
+Calf Raises - 3x10
+</p>
+
+</div>
+
+`;
+
+}
+
+
+if(day === "wednesday"){
+
+display.innerHTML = `
+
+<div class="card">
+
+<h2>Wednesday</h2>
+
+<p>
+Rest / Light Cardio
+</p>
+
+</div>
+
+`;
+
+}
+
+
+if(day === "thursday"){
+
+display.innerHTML = `
+
+<div class="card">
+
+<h2>Thursday - Full Body</h2>
+
+<p>
+Deadlifts - 4x6<br><br>
+Lat Pulldowns - 3x12<br><br>
+Dumbbell Press - 3x10<br><br>
+Core Work
+</p>
+
+</div>
+
+`;
+
+}
+
+
+if(day === "friday"){
+
+display.innerHTML = `
+
+<div class="card">
+
+<h2>Friday - Cardio + Abs</h2>
+
+<p>
+Incline Walk 20-30 mins<br><br>
+Plank 3x60 secs<br><br>
+Hanging Leg Raises 3x10
+</p>
+
+</div>
+
+`;
+
+}
+
+}
