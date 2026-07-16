@@ -196,3 +196,40 @@ font-weight:bold;
 color:#ff1a1a;
 
 }
+.logTable {
+
+width:100%;
+border-collapse:collapse;
+margin-bottom:20px;
+
+}
+
+
+.logTable th {
+
+color:#ff1a1a;
+padding:8px;
+
+}
+
+
+.logTable td {
+
+padding:5px;
+text-align:center;
+
+}
+
+
+.logTable input {
+
+width:70px;
+background:#222;
+color:white;
+
+border:1px solid #444;
+border-radius:8px;
+
+padding:8px;
+
+}
