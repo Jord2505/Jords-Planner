@@ -399,7 +399,6 @@ window.addEventListener(
 ()=>{
 updateWorkoutStats();
 });
-function showWorkout(day){
 
 const display =
 document.getElementById("workoutDisplay");
@@ -540,3 +539,10 @@ Hanging Leg Raises 3x10
 }
 
 }
+function showWorkout(day){
+
+alert("Workout opened");
+
+const display =
+document.getElementById("workoutDisplay");
+}    
