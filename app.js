@@ -351,3 +351,51 @@ localStorage.getItem(
 });
 
 });
+// Workout streak tracking
+
+function completeWorkout(){
+
+let total =
+Number(
+localStorage.getItem("workouts")
+) || 0;
+
+
+total++;
+
+
+localStorage.setItem(
+"workouts",
+total
+);
+
+
+updateWorkoutStats();
+
+}
+
+
+
+function updateWorkoutStats(){
+
+let total =
+Number(
+localStorage.getItem("workouts")
+) || 0;
+
+
+document.getElementById(
+"workoutStats"
+).innerHTML =
+`
+🏋️ Total Workouts: ${total}
+`;
+
+}
+
+
+window.addEventListener(
+"load",
+()=>{
+updateWorkoutStats();
+});
