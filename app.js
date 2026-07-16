@@ -541,16 +541,20 @@ Hanging Leg Raises 3x10
 }
 function showWorkout(day) {
 
-const display = document.getElementById("workoutDisplay");
+    const workoutDisplay = document.getElementById("workoutDisplay");
 
-display.innerHTML = `
-<div class="card">
+    workoutDisplay.innerHTML = `
+    
+    <div class="card">
 
-<h2>${day}</h2>
+    <h2>${day}</h2>
 
-<p>Workout loaded</p>
+    <p>
+    Workout opened successfully
+    </p>
 
-</div>
-`;
+    </div>
+
+    `;
 
 }
