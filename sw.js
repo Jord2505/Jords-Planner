@@ -1,11 +1,20 @@
-const cacheName = "jords-planner-v2";
+const CACHE_NAME = "jords-planner-v1";
 
-const files = [
-"index.html",
-"style.css",
-"app.js",
-"manifest.json"
+
+const FILES_TO_CACHE = [
+
+"./",
+
+"./index.html",
+
+"./style.css",
+
+"./app.js",
+
+"./manifest.json"
+
 ];
+
 
 
 self.addEventListener(
@@ -14,14 +23,18 @@ event => {
 
 event.waitUntil(
 
-caches.open(cacheName)
-.then(cache =>
-cache.addAll(files)
-)
+caches.open(CACHE_NAME)
+.then(cache => {
+
+return cache.addAll(FILES_TO_CACHE);
+
+})
 
 );
 
 });
+
+
 
 
 self.addEventListener(
@@ -31,9 +44,11 @@ event => {
 event.respondWith(
 
 caches.match(event.request)
-.then(response =>
-response || fetch(event.request)
-)
+.then(response => {
+
+return response || fetch(event.request);
+
+})
 
 );
 
