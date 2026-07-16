@@ -26,6 +26,7 @@ No workouts completed yet
 
 <link rel="stylesheet" href="style.css">
 <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff1a1a">
 
 </head>
 
@@ -379,6 +380,14 @@ No data saved yet
 
 
 <script src="app.js"></script>
+<script>
 
+if ("serviceWorker" in navigator) {
+
+navigator.serviceWorker.register("sw.js");
+
+}
+
+</script>
 </body>
 </html>
