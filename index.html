@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
+    <title>Jord's Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>Jord's Planner</h1>
+        <p id="date"></p>
+    </header>
+
+
+    <main>
+
+        <section class="card">
+            <h2>Today's Focus</h2>
+            <p id="todayWorkout">
+                Loading workout...
+            </p>
+        </section>
+
+
+        <section class="card">
+            <h2>Daily Checklist</h2>
+
+            <label>
+                <input type="checkbox">
+                Workout Complete
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Meals Followed
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Water Goal (2-3L)
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Walk / Golf
+            </label>
+
+        </section>
+
+
+        <section class="card">
+            <h2>Today's Meals</h2>
+
+            <p>
+                🥣 Breakfast<br>
+                60g Oats<br>
+                200ml Milk<br>
+                30g Whey<br>
+                50g Berries
+            </p>
+
+            <p>
+                🍗 Lunch<br>
+                180g Chicken Breast<br>
+                70g Dry Rice<br>
+                100g Veg
+            </p>
+
+            <p>
+                🥩 Dinner<br>
+                200g 5% Mince<br>
+                250g Potatoes<br>
+                100g Veg
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <nav>
+
+        <button>🏠 Home</button>
+        <button>🏋️ Training</button>
+        <button>🍽 Meals</button>
+        <button>🛒 Shop</button>
+        <button>📈 Progress</button>
+
+    </nav>
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
